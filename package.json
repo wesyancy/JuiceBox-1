@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed:dev": "nodemon ./db/seed.js"
   },
   "keywords": [],
   "author": "",
@@ -140,7 +141,6 @@
     "negotiator": "^0.6.3",
     "node-gyp": "^8.4.1",
     "node-sass": "^7.0.3",
-    "nodemon": "^2.0.20",
     "nopt": "^5.0.0",
     "normalize-package-data": "^3.0.3",
     "npmlog": "^5.0.1",
@@ -157,6 +157,7 @@
     "path-key": "^3.1.1",
     "path-parse": "^1.0.7",
     "performance-now": "^2.1.0",
+    "pg": "^8.8.0",
     "process-nextick-args": "^2.0.1",
     "promise-inflight": "^1.0.1",
     "promise-retry": "^2.0.1",
@@ -230,5 +231,8 @@
     "url": "https://github.com/wesyancy/JuiceBox-1/issues"
   },
   "homepage": "https://github.com/wesyancy/JuiceBox-1#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
