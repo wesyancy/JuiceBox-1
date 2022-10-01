@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seed:dev": "nodemon ./db/seed.js"
+    "seed:dev": "nodemon ./db/seed.js",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -136,6 +138,7 @@
     "minipass-sized": "^1.0.3",
     "minizlib": "^2.1.2",
     "mkdirp": "^1.0.4",
+    "morgan": "^1.10.0",
     "ms": "^2.1.2",
     "nan": "^2.16.0",
     "negotiator": "^0.6.3",
