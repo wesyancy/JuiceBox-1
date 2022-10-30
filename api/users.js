@@ -8,7 +8,6 @@ usersRouter.use((req, res, next) => {
   
     console.log("A request is being made to /users");
     next();
-
 });
 
 usersRouter.get('/', async (req, res) => {
@@ -18,7 +17,6 @@ usersRouter.get('/', async (req, res) => {
     res.send({
         users
     });
-
 });
 
 usersRouter.post('/login', async (req, res, next) => {
@@ -54,9 +52,7 @@ usersRouter.post('/login', async (req, res, next) => {
       
       console.log(error);
       next(error);
-
     }
-
   });
 
   usersRouter.post('/register', async (req, res, next) => {
